@@ -1,0 +1,121 @@
+html, body {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial;
+    font-size: 2vmin;
+}
+
+header {
+    background: linear-gradient(#204060, #4080c0);
+    border-style: none none groove;
+    box-sizing: border-box;
+    padding: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+header a {
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    font-size: 4em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#4080c0, #204060);
+    box-shadow: 0 0 1em 0 yellow;
+    border-style: groove;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-weight: bolder;
+}
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+    font-size: 2em;
+    text-align: center;
+    flex: 1;
+}
+
+nav a:hover {text-shadow: 0 0 0.5em yellow;}
+nav a:active {text-shadow: 0 0 0.5em yellow;}
+nav a:visited {color: white;}
+nav a.selected {color: #e0e000;}
+
+main {
+    box-sizing: border-box;
+}
+
+main > p {
+    text-align: center;
+}
+
+main #gallery {
+    display:flex;
+    flex-wrap:wrap-reverse;
+    align-items: center;
+    margin: 2em;
+}
+
+main #gallery img {
+    margin: 1em;
+    width: 25%;
+    flex: 1;
+}
+
+main article {
+    border-style: groove;
+    border-radius: 2em;
+    background: linear-gradient(#4080c0, #204060);
+    box-sizing: border-box;
+    margin: 2em;
+    padding: 1em;
+}
+
+main article > div {
+    display: flex;
+    align-items: center;
+}
+
+main article > div a {flex: 1;}
+
+main article > div img {
+    width: 100%;
+    max-height: 25vw;
+}
+
+main article > div div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1em 1em 1em 3em;
+    flex: 1;
+}
+
+main article h1 {text-align: center;}
+
+main article .technologies {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+
+footer {
+    background: linear-gradient(#4080c0, #204060);
+    font-weight: bolder;
+    text-align: center;
+    border-style: groove none none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
