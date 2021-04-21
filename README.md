@@ -2,4 +2,4 @@
 
 Welcome to my portfolio.
 
-[Play](https://camieleon.github.io/Portfolio/ "Portfolio")  
+[Portfolio](https://camieleon.github.io/Portfolio/ "Portfolio")  
