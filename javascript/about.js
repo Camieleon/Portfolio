@@ -8,6 +8,7 @@
     }
 
     globalThis.create_header();
+    // globalThis.create_navigation();
 
     const about = document.getElementById("About");
     if(about)
@@ -21,7 +22,24 @@
     const paragraph = document.createElement("p");
     paragraph.textContent = "Welcome to my portfolio."
 
+    const gallery = document.createElement("div");
+    gallery.id = "Gallery";
+    add_image(gallery, "images/Prism Break.png");
+    add_image(gallery, "images/Space Duel.png");
+    add_image(gallery, "images/Bowel Movement.png");
+    add_image(gallery, "images/Basketball.png");
+
     main.appendChild(paragraph);
+    // main.appendChild(gallery);
+    globalThis.create_preview
+    (
+        main,
+        "images/Prism Break.png",
+        "https://github.com/Camieleon/Prism-Break",
+        "Prism Break",
+        "Do you have what it takes to break out of the most sophisticated prison ever created? Solve mind-bending puzzles by pointing your laser in the right direction.",
+        ["Haxe", "OpenFL"]
+    );
 
     globalThis.create_preview
     (
